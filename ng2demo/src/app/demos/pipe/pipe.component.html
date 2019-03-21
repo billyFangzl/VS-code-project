@@ -1,0 +1,16 @@
+<h2>Custom Pipe - pure pipe</h2>
+<p>{{money|currency:'USD':true}}</p>
+<p>{{money|currencyExchange:'CNY'|currency:'CNY':ture}}</p>
+<p>{{money|currencyExchange:'JPY'|currency:'JPY':ture}}</p>
+
+<h2>Impure Pip</h2>
+<ul>
+  <li *ngFor="let m of (moneyList|myfilter)">
+    {{m}}
+  </li>
+</ul>
+<input type="number" [(ngModel)]="newMoney" class="form-control">
+<button class="btn btn-paimary" (click)="addMoney()">Add Money</button>
+
+<h2>Async Pip - Impure Pipe</h2>
+<p>{{fetchMoney|async|currency}}</p>
