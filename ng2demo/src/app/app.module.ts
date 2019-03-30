@@ -26,6 +26,9 @@ import { CcAnotherChildComponent } from './demos/component-communiation/cc-anoth
 import { PipeComponent } from './demos/pipe/pipe.component';
 import { CurrencyExchangePipe } from './demos/pipe/currency-exchange.pipe';
 import { MyfilterPipe } from './demos/pipe/myfilter.pipe';
+import { ObservableComponent } from './demos/observable/observable.component';
+import { FormObservableComponent } from './demos/observable/form-observable/form-observable.component';
+import { HttpObservableComponent } from './demos/observable/http-observable/http-observable.component';
 
 
 @NgModule({
@@ -52,7 +55,10 @@ import { MyfilterPipe } from './demos/pipe/myfilter.pipe';
     CcAnotherChildComponent,
     PipeComponent,
     CurrencyExchangePipe,
-    MyfilterPipe
+    MyfilterPipe,
+    ObservableComponent,
+    FormObservableComponent,
+    HttpObservableComponent
   ],
   imports: [
     BrowserModule,

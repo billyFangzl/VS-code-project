@@ -6,6 +6,7 @@ import{FormComponent} from './demos/form/form.component';
 import { DirectiveComponent } from './demos/directive/directive.component';
 import { ComponentCommuniationComponent } from './demos/component-communiation/component-communiation.component';
 import { PipeComponent } from './demos/pipe/pipe.component';
+import { ObservableComponent } from './demos/observable/observable.component';
 
 const routes: Routes = [
     // {
@@ -34,6 +35,10 @@ const routes: Routes = [
     {
         path:'p',
         component:PipeComponent
+    },
+    {
+        path:'o',
+        component:ObservableComponent
     }
 
 ];
